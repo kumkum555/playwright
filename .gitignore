@@ -1,0 +1,12 @@
+venvpython/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+reports/
+screenshots/
+videos/
+
+.vscode/
+
+.env

@@ -1,37 +1,35 @@
-# Playwright Python Automation Framework
+# 🚀 Playwright Python Automation Framework
 
-A Python-based UI Automation Testing Framework built with **Playwright** and **Pytest**. This framework is designed to automate web application testing with HTML reports, screenshots, and video recording.
+A Python-based UI Automation Testing Framework built using **Playwright**, **Pytest**, and **Python**.
 
-## 🚀 Features
-
-- Playwright with Python
-- Pytest Test Runner
-- HTML Test Reports
-- Screenshot Capture
+This framework supports:
+- UI Automation Testing
+- HTML Reports
+- Screenshots on Failure
 - Video Recording
-- Page Object Model (POM) Ready
-- Easy Test Execution
+- Cross Browser Testing
+- Easy Setup
 
-## 📁 Project Structure
+---
 
+# 📋 Prerequisites
+
+Before running the project, make sure the following software is installed:
+
+- Python 3.10 or above
+- Visual Studio Code
+- Git
+- Playwright
+
+Check Python version:
+
+```bash
+python --version
 ```
-playwright/
-│
-├── pages/
-├── test/
-├── reports/
-├── screenshots/
-├── videos/
-├── utils/
-├── conftest.py
-├── pytest.ini
-├── requirements.txt
-└── README.md
-```
 
-## 🛠️ Installation
+---
 
-Clone the repository:
+# 📥 Clone Repository
 
 ```bash
 git clone https://github.com/kumkum555/playwright.git
@@ -43,77 +41,193 @@ Move into the project directory:
 cd playwright
 ```
 
-Create a virtual environment:
+---
+
+# 📁 Project Structure
+
+```
+playwright/
+│
+├── test/
+│   └── test_login.py
+│
+├── utils/
+│
+├── reports/
+│
+├── screenshots/
+│
+├── videos/
+│
+├── conftest.py
+├── pytest.ini
+├── requirements.txt
+├── .gitignore
+└── README.md
+```
+
+---
+
+# 🐍 Create Virtual Environment
+
+Windows
 
 ```bash
 python -m venv venvpython
 ```
 
-Activate the virtual environment:
+---
 
-### Windows
+# ▶️ Activate Virtual Environment
+
+Windows
 
 ```bash
 venvpython\Scripts\activate
 ```
 
-### Install dependencies
+After activation you should see:
+
+```
+(venvpython)
+```
+
+---
+
+# 📦 Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Install Playwright browsers
+---
+
+# 🎭 Install Playwright Browsers
+
+Run this command only once after installing dependencies.
 
 ```bash
 playwright install
 ```
 
-## ▶️ Run Tests
+---
 
-Run all tests:
+# ▶️ Run All Test Cases
 
 ```bash
 pytest
 ```
 
-Run a specific test:
+---
+
+# ▶️ Run Specific Test File
 
 ```bash
 pytest test/test_login.py
 ```
 
-## 📊 Generate HTML Report
+---
+
+# 📊 Generate HTML Report
 
 ```bash
 pytest --html=reports/report.html --self-contained-html
 ```
 
-Open the report:
+Open the generated report:
 
 ```
 reports/report.html
 ```
 
-## 📸 Test Artifacts
+---
 
-- HTML Reports
-- Screenshots
-- Videos (if enabled)
+# 📸 Screenshots
 
-## 🧰 Tech Stack
+Failure screenshots are automatically saved in:
 
-- Python
-- Playwright
-- Pytest
-- pytest-html
-
-## 👩‍💻 Author
-
-**Kumkum Kapkoti**
-
-GitHub: https://github.com/kumkum555
+```
+screenshots/
+```
 
 ---
 
-Happy Testing! 🚀
+# 🎥 Video Recording
+
+Execution videos are automatically saved in:
+
+```
+videos/
+```
+
+---
+
+# 📄 requirements.txt
+
+If you install any new package, update the requirements file.
+
+```bash
+pip freeze > requirements.txt
+```
+
+---
+
+# 🔄 Pull Latest Changes
+
+```bash
+git pull origin main
+```
+
+---
+
+# ⬆️ Push Your Changes
+
+```bash
+git add .
+
+git commit -m "Your Commit Message"
+
+git push origin main
+```
+
+---
+
+# 🧹 Deactivate Virtual Environment
+
+```bash
+deactivate
+```
+
+---
+
+# 📝 Common Commands
+
+| Task | Command |
+|------|---------|
+| Create Virtual Environment | `python -m venv venvpython` |
+| Activate Virtual Environment | `venvpython\Scripts\activate` |
+| Install Dependencies | `pip install -r requirements.txt` |
+| Install Playwright Browsers | `playwright install` |
+| Run Tests | `pytest` |
+| Generate HTML Report | `pytest --html=reports/report.html --self-contained-html` |
+| Update Requirements | `pip freeze > requirements.txt` |
+| Deactivate Environment | `deactivate` |
+
+---
+
+# 📌 Notes
+
+- Activate the virtual environment before running the project.
+- Install dependencies using `requirements.txt`.
+- Run `playwright install` only once after setup.
+- HTML reports are generated inside the `reports` folder.
+- Failure screenshots are stored inside the `screenshots` folder.
+- Test execution videos are stored inside the `videos` folder.
+
+---
+
+# 👩‍💻 Author
+
+**Kumkum Kapkoti**
+
+Playwright Python Automation Framework

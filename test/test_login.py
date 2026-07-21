@@ -2,7 +2,6 @@ from playwright.sync_api import expect
 
 def test_login(page):
     page.goto("https://productstudio.indixpert.com/signin")
-
     # Email
     page.locator("input[type='email']").fill("amitsingh_99@yopmail.com")
 
@@ -14,6 +13,6 @@ def test_login(page):
 
     # Wait for page to load
     page.wait_for_load_state("networkidle")
-
+    page.pause() 
     # Verify login succeeded
     assert "signin" not in page.url.lower()

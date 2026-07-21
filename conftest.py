@@ -12,7 +12,10 @@ def page():
 
         page = context.new_page()
 
+
+        # page.pause()
         yield page
 
-        context.close()
-        browser.close()
+
+        # context.close()
+        # browser.close()
